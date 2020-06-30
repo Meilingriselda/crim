@@ -1,5 +1,700 @@
-<htlm>
+
+<!doctype html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<script src="/cdn-cgi/apps/head/-M1oCenK2-WAvZ8l9q9qGrIaCmU.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-167550197-1" type="3c7a6bfcfec56236de939657-text/javascript"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript">
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-167550197-1');
+		</script>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="theme-color" content="#112b42">
+<title>IntelCon | Congreso de Ciberinteligencia Online</title>
+<meta name="description" content="El objetivo del congreso es la difusión de conocimientos de calidad sobre Ciberinteligencia de forma gratuita y en sus diferentes áreas asociadas, para formar a todas las personas interesadas en esta disciplina.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+<link rel="manifest" href="assets/img/icon/site.webmanifest">
+<link rel="mask-icon" href="assets/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Ginseg.com">
+<link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript">
+			
+
+				function get_hours(hour_minut_meeting){
+
+						mx_bg_quito_lima = moment("2020-07-21 "+hour_minut_meeting+":00").add(-7, 'hours').format('HH:mm');
+						santiago_chile= moment("2020-07-21 "+hour_minut_meeting+":00").add(-6, 'hours').format('HH:mm');
+						buenos_aires=  moment("2020-07-21 "+hour_minut_meeting+":00").add(-5, 'hours').format('HH:mm');
+				
+						return "<span style='color:#05db99'>"+hour_minut_meeting+" España</span> &nbsp; &nbsp;<span style='color:#b3b3b3'>  "+mx_bg_quito_lima+" CDMX / Bogotá / Quito / Lima &nbsp;&nbsp; "+santiago_chile+" Santiago de Chile &nbsp;&nbsp;"+buenos_aires+" Buenos Aires</span>";
+
+						
+	             }
+	 
+		</script>
+</head>
 <body>
-<h1> hola </h1>
-</body>
+<div class="preloader-mask">
+<div class="preloader"></div>
+</div>
+<canvas id="dotty"></canvas>
+<div class="global-overlay" style="opacity: 1; transform: translateX(100%);  margin-top: -7px;">
+<div class="overlay skew-part"></div>
+</div>
+<section id="intro-side">
+<ul class="socials-nav">
+<li class="socials-nav-item"><a target="new" href="https://www.linkedin.com/company/ginseg/"><span class="fa fa-linkedin"></span></a></li>
+<li class="socials-nav-item"><a target="new" href="https://twitter.com/gIntelSeg/"><span class="fa fa-twitter"></span></a></li>
+<li class="socials-nav-item"><a target="new" href="https://t.me/ginseg"><span class="fa fa-paper-plane"></span></a></li>
+</ul>
+<div class="heading-block centered-block align-center">
+<div class="container">
+<h5 class="heading-alt" style="margin-bottom: 8px;">
+<span class="fa fa-calendar-o base-clr-txt"></span>
+&nbsp;&nbsp;27 al 31 Julio
+<span class="fa fa-video-camera  base-clr-txt" style="margin-left: 14px;"></span>
+&nbsp;&nbsp;100% online
+</h5>
+<img src="assets/img/logo-intelcon.png" class="img-portada" width="600" alt="IntelCon | Congreso de Ciberinteligencia">
+<h6 class="thin base-font" style="color: #fff">Congreso Online gratuito de <strong>#Ciberinteligencia</strong></h6>
+<div class="btns-container">
+<a href="#about" class="btn btn-md" style="color:#000">Ver información</a>
+
+</div>
+</div>
+</div>
+</section>
+<header class="header header-black">
+<div class="header-wrapper">
+<div class="container">
+<div class="col-sm-2 col-xs-12 navigation-header">
+<a href="#" class="logo">
+<img src="assets/img/intelcon_logo.png" alt="IntelCon | Congreso de Ciberinteligencia" class="retina-hide">
+</a>
+<button id="btn-mobile" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="col-sm-10 col-xs-12 navigation-container">
+<div id="navigation" class="navbar-collapse collapse">
+<a href="#cfp" class="pull-right buy-btn">Abierto CFP</a>
+<ul class="navigation-list pull-right light-text">
+<li class="navigation-item"><a href="#ponentes" class="navigation-link">Ponentes</a></li>
+
+<li class="navigation-item"><a href="#sponsors" class="navigation-link">Patrocinadores</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section id="evento" class="section align-center">
+<div class="container">
+<div class="main-wrapper-badge">
+<div class="badge-hex yellow">
+<div class="circle"> <i class="icon section-icon icon-multimedia-12"></i></div>
+</div>
+</div>
+<h3>Sobre el congreso...</h3>
+<br />
+<br />
+<div class="tabs-wrapper tabs-horizontal">
+<ul class="nav nav-tabs nav-shadow">
+<li class="active"><a href="#horizontal_tab1" data-toggle="tab">
+<h6 class="heading-alt">Sobre el evento</h6>
+</a></li>
+<li><a href="#horizontal_tab2" data-toggle="tab">
+<h6 class="heading-alt">Ciclo de Ciberinteligencia</h6>
+</a></li>
+<li><a href="#horizontal_tab3" data-toggle="tab">
+<h6 class="heading-alt">Sponsors</h6>
+</a></li>
+</ul>
+<div class="tab-content">
+<div id="horizontal_tab1" class="tab-pane fade active in">
+<div class="col-sm-12 align-left">
+El objetivo principal del congreso IntelCon<sup style="font-size: 10px;">&copy;</sup> 2020, organizado por la comunidad GINSEG, es la difusión de conocimiento de calidad y consolidación de una comunidad enfocada en la Ciberinteligencia. El Congreso constará de una serie de temáticas alrededor del sector de la Ciberinteligencia, que serán cubiertas tanto en sesiones en forma de ponencias y talleres, formando parte de un itinerario guiado que gira sobre el ya conocido <b>Ciclo de Inteligencia</b>. Los fundamentos principales que todo asistente podrá aprender tras el evento son los siguientes:<br><br>
+<ul style="border-left: 2px solid #05db99;padding-left: 30px;">
+<li>Fundamentos y conceptualización de la Ciberinteligencia.</li>
+<li>Diseño y planeamiento de actividades de Ciberinteligencia. </li>
+<li>Tácticas, técnicas y procedimientos de obtención digital de información.</li>
+<li>Tecnologías y procesos para el tratamiento y organizaicón de información digital. </li>
+<li>Arte y técnica de análisis e interpretación de información en Ciberinteligencia.</li>
+<li>Productos de Ciberinteligencia para el apoyo a la toma de decisiones.</li>
+<li>Enfoques y estructuración de servicios de Ciberinteligencia.</li>
+</ul>
+<br>
+Apúntate si estás interesado en cualquiera de estos conceptos o si quieres compartir tu experiencia en la comunidad:
+<br><br>
+<b>#InteligenciaDeAmenazas &nbsp;&nbsp; #OSINT &nbsp;&nbsp; #SOCMINT &nbsp;&nbsp; #VirtualHUMINT<br>
+#DeepWeb &nbsp;&nbsp; #RespuestaIncidentes &nbsp;&nbsp; #TécnicasAnálisis &nbsp;&nbsp; #Herramientas &nbsp;&nbsp; #Ciberamenazas</b>
+<br><br>
+La asistencia es totalmente <b>gratuita</b> y 100% en <b>streaming online</b>. En las próximas semanas ampliaremos información referente al evento en la web con contenidos e información relacionada. ¡Estate pendiente!
+<br><br>
+Te agradecemos que compartas en redes sociales o directamente a las personas que creas que puedan estar interesadas.
+</div>
+</div>
+<div id="horizontal_tab2" class="tab-pane fade">
+<div class="col-sm-6 img-column">
+<img src="assets/img/ciclo-ciberinteligencia.png" class="img-responsive" />
+</div>
+<div class="col-sm-6 align-left">
+<p>Para poder aprovechar el evento no es necesario tener conocimientos previos sobre Ciberinteligencia, sin embargo lo hemos estructurado y planteado para que al final del mismo se haya podido ver una visión 360º del ciclo de Inteligencia, el cual se puede aplicar a un servicio o producto de Ciberinteligencia. Por ello las ponencias y talleres están distribuidos según las 4 fases del ciclo así como la agenda del congreso.</p>
+<br>Cada módulo consta de varias ponencias y talleres temáticos que intentaremos agrupar en un único día por módulo.
+<br><br><br>
+<ul>
+<li>Módulo 1 / &nbsp;&nbsp;<b>Dirección y Planificación</b></li>
+<li>Módulo 2 / &nbsp;&nbsp;<b>Obtencion</b></li>
+<li>Módulo 3 / &nbsp;&nbsp;<b>Análisis y elaboración</b></li>
+<li>Módulo 4 / &nbsp;&nbsp;<b>Difusión</b></li>
+</ul>
+</div>
+</div>
+<div id="horizontal_tab3" class="tab-pane fade">
+<div class="col-sm-5 img-column">
+<img src="assets/img/sponsors-intro.png" class="img-responsive" />
+</div>
+<div class="col-sm-7 align-left">
+Estamos abiertos a patrocinios para impulsar la difusión del congreso (blogs, redes sociales, instituciones, empresas... ), gratificación para los ponentes o para cubrir gastos de infraestructura tecnológica o recursos necesarios para la realización del mismo (servicios de streaming).
+<br><br>El evento es 100% gratuito, abierto a todo las personas interesadas sin restrición y sin ánimo de lucro.
+<br><br>Si estas interesado en ayudarnos de alguna de las vías anteriormente mencionadas u otras, puedes ponerte en contacto con nosotros a través de nuestras redes sociales o escribiéndonos un email a <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcb5b2a8b9b0bfb3b29cbbb5b2afb9bbf2bfb3b1">[email&#160;protected]</a></b>, y nos pondremos en contacto contigo para facilitarte un dossier de sponsorización con las alternativas.
+<br><br>¡Muchas gracias de antemano!.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="counters" class="section align-center overlay bg-cover bg5 light-text">
+<div class="container">
+<div class="row counters-wrapper">
+<div class="col-sm-3 col-xs-6">
+<div class="counter-block counter-block-no-border has-separator">
+<div class="counter-box">
+<div class="counter-content">
+<span class="count" data-from="0" data-to="36">0</span>
+<p class="title">Ponentes confirmados</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counter-block counter-block-no-border has-separator">
+<div class="counter-box">
+<div class="counter-content">
+<span class="count" data-from="0" data-to="5">0</span>
+<p class="title">días</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counter-block counter-block-no-border has-separator">
+<div class="counter-box">
+<div class="counter-content">
+<span class="count" data-from="0" data-to="5">0</span>
+<p class="title">talleres gratuitos</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="counter-block counter-block-no-border">
+<div class="counter-box">
+<div class="counter-content">
+<span class="count" data-from="0" data-to="30">0</span>
+<p class="title">horas de formación online</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ponentes" class="section align-center">
+<div class="container">
+<div class="main-wrapper-badge">
+<div class="badge-hex yellow">
+<div class="circle"> <i class="icon section-icon icon-faces-users-04"></i></div>
+</div>
+</div>
+<h3>Ponentes</h3>
+<p class="text-alt" style="margin-bottom: 30px;">Nota: la lista de ponentes es provisional según confirmación y disponibilidad de agenda. </p>
+<br />
+<br />
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/carlos-seisdedos.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/carlos-seisdedos.jpg" class="img-responsive"></div>
+<h3 class="name">Carlos Seisdedos</h3>
+<p class="text-alt"><small>Responsable Ciberinteligencia <br> Internet Security Auditors</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/vicente-aguilera.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/vicente-aguilera.jpg" class="img-responsive"></div>
+<h3 class="name">Vicente Aguilera</h3>
+<p class="text-alt"><small>CEO Internet Security Auditors <br>OWASP Spain Chapter Leader</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/carlos-loureiro.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/carlos-loureiro.jpg" class="img-responsive"></div>
+<h3 class="name">Carlos Loureiro</h3>
+<p class="text-alt"><small>Cyber Criminology<br>Cuerpo Nacional de Policía</small></p>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/casimiro-nevado.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/casimiro-nevado.jpg" class="img-responsive"></div>
+<h3 class="name">Casimiro Nevado</h3>
+<p class="text-alt"><small>Inspector Cuerpo Nacional de Policía <br> Organizador C1b3rWall</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/pablo-bentanachs.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/pablo-bentanachs.jpg" class="img-responsive"></div>
+<h3 class="name">Pablo Bentanachs </h3>
+<p class="text-alt"><small>Analista Senior Threat Intelligence</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jose-manuel-diaz-caneja.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/diaz-caneja.jpg" class="img-responsive"></div>
+<h3 class="name">José Manuel Díaz-Caneja</h3>
+<p class="text-alt"><small>Teniente Coronel Ejército de Tierra<br>Director de Inteligencia y Liderazgo</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/pablo-san-emeterio.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/pablo-san-emeterio.jpg" class="img-responsive"></div>
+<h3 class="name">Pablo San Emeterio</h3>
+<p class="text-alt"><small>Security Expert, R&D,<br>Business Development en Telefónica</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/eduardo-sanchez.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/eduardo-sanchez.jpg" class="img-responsive"></div>
+<h3 class="name">Eduardo Sánchez</h3>
+<p class="text-alt"><small>CEO de AllPentesting<br>Profesor en Máster UFV / UCM</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/diego-regueira.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/diego-regueira.jpg" class="img-responsive"></div>
+<h3 class="name">Diego Regueira</h3>
+<p class="text-alt"><small>Senior Cyber Intelligence Threat Analyst <br>en entidad financiera</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/hugo-zunzarren.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/hugo-zunzarren.jpg" class="img-responsive"></div>
+<h3 class="name">Hugo Zunzarren</h3>
+<p class="text-alt"><small>Socio Director Área de Inteligencia Económica del Grupo Paradell<br>Profesor en Máster UAM / UFV</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/eva-moya.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/eva-moya.png" class="img-responsive"></div>
+<h3 class="name">Eva Moya</h3>
+<p class="text-alt"><small>Risk & Fraud Manager <br> Profesora Experto universitario UAM / Comillas</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/david-marugan.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/david-marugan.jpg" class="img-responsive"></div>
+<h3 class="name">David Marugán</h3>
+<p class="text-alt"><small>Cybersecurity Architect Manager<br>en Anadat Technology</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/selva-orejon.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/selva-orejon.jpg" class="img-responsive"></div>
+<h3 class="name">Selva Orejón</h3>
+<p class="text-alt"><small>Directora ejecutiva de onBRANDING<br>Perito judicial en Identidad digital<br>Profesora en Máster UB / UFV</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/daniel-echeverri.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/daniel-echeverri.jpg" class="img-responsive"></div>
+<h3 class="name">Daniel Echeverri</h3>
+<p class="text-alt"><small>Fundador The Hacker Way Academy<br>Investigador de seguridad informática y Hacking</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/ana-paramo.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/ana-paramo.jpg" class="img-responsive"></div>
+<h3 class="name">Ana Páramo</h3>
+<p class="text-alt"><small>Consultora de Inteligencia<br>económica y de seguridad</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jose-manuel-vera.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/jose-manuel-vera.jpg" class="img-responsive"></div>
+<h3 class="name">José Manuel Vera</h3>
+<p class="text-alt"><small>Redactor de la Revista SIC<br>Periodista especializado en Ciberseguridad</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/salvador-gamero.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/salvador-gamero.jpg" class="img-responsive"></div>
+<h3 class="name">Salvador Gamero</h3>
+<p class="text-alt"><small>Fundador de Detectivia<br>Detective Privado especializado en ciberinvestigación</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jorge-coronado.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/jorge-coronado.jpg" class="img-responsive"></div>
+<h3 class="name">Jorge Coronado</h3>
+<p class="text-alt"><small>CEO y fundador de QuantiKa14<br>Perito e investigador informático</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/gonzalo-terciado.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/gonzalo-terciado.png" class="img-responsive"></div>
+<h3 class="name">Gonzalo Terciado</h3>
+<p class="text-alt"><small>Analista de Inteligencia <br>en Grupo Zerolynx</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/mercedes-munoz.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/mercedes-munoz.jpg" class="img-responsive"></div>
+<h3 class="name">Mercedes Muñoz</h3>
+<p class="text-alt"><small>Analista de Ciberseguridad <br>en Grupo Zerolynx</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/cristina-tarrida.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/cristina-tarrida.jpg" class="img-responsive"></div>
+<h3 class="name">Cristina L. Tarrida</h3>
+<p class="text-alt"><small>Analista de Operaciones de Influencia y Desinformación</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/raquel-miguel.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/raquel-miguel.jpg" class="img-responsive"></div>
+<h3 class="name">Raquel Miguel</h3>
+<p class="text-alt"><small>Periodista e investigadora externa<br>para EU DisinfoLab</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jorge-alcain.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/jorge-alcain.jpg" class="img-responsive"></div>
+<h3 class="name">Jorge Alcaín</h3>
+<p class="text-alt"><small>PMO Europe Manager en Cipher</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jose-maria-blanco.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/jose-maria-blanco.jpg" class="img-responsive"></div>
+<h3 class="name">José Maria Blanco</h3>
+<p class="text-alt"><small>Manager Oficina de Inteligencia y Prospectiva en Prosegur</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/francisco-j-rodriguez.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/francisco-j-rodriguez.jpg" class="img-responsive"></div>
+<h3 class="name">Francisco J. Rodríguez</h3>
+<p class="text-alt"><small>Asesor de Ciberseguridad en ITQLatam (CSIRT Gobierno de Chile)</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/antonio-jose-juanilla.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/antonio-jose-juanilla.jpg" class="img-responsive"></div>
+<h3 class="name">Antonio José Juanilla</h3>
+<p class="text-alt"><small>Ingeniero DevOps e Investigador de seguridad</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/sergio-hernandez.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/sergio-hernandez.jpg" class="img-responsive"></div>
+<h3 class="name">Sergio Hernández</h3>
+<p class="text-alt"><small>Senior Technical Sales Specialist en CyberGamp</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/roberto-lopez.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/roberto-lopez.jpg" class="img-responsive"></div>
+<h3 class="name">Roberto López</h3>
+<p class="text-alt"><small>Cofundador RootPointer, Profesor Universitario en U-Tad, Techical Manager en Innotec</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/miguel-angel-liebanas.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/miguel-angel-liebanas.jpg" class="img-responsive"></div>
+<h3 class="name">Miguel Ángel Liébanas</h3>
+<p class="text-alt"><small>Ingeniero Social y Analista de Datos. Cofundador de Human Trends</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/agustin-bignu.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/agustin-bignu.jpg" class="img-responsive"></div>
+<h3 class="name">Agustín Bignu</h3>
+<p class="text-alt"><small>Físico y Científico de Datos. Cofundador de Human Trends</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/valentina-palacin.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/valentina-palacin.jpg" class="img-responsive"></div>
+<h3 class="name">Valentina Palacín</h3>
+<p class="text-alt"><small>Senior Cyber Threat Intelligence Analyst en Deloitte</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/ruth-esmeralda-barbacil.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/ruth-esmeralda-barbacil.jpg" class="img-responsive"></div>
+<h3 class="name">Ruth Esmeralda Barbacil</h3>
+<p class="text-alt"><small>Especialista Threat Intelligence & Analytics en Deloitte</small></p>
+</div>
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/martin-vigo.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/martin-vigo.jpg" class="img-responsive"></div>
+<h3 class="name">Martín Vigo</h3>
+<p class="text-alt"><small>Red teamer e investigador de seguridad informática en Facebook</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/brian-arroyo.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/brian-arroyo.jpg" class="img-responsive"></div>
+<h3 class="name">Brian Arroyo</h3>
+<p class="text-alt"><small>Investigador y Analista Digital. Fundador de Arsal Security</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/jorge-martin.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/jorge-martin.png" class="img-responsive"></div>
+<h3 class="name">Jorge Martín</h3>
+<p class="text-alt"><small>Investigador Forense Digital. Coordinador Grupo de investigación de Ingeniería Social UTN-La Plata.</small></p>
+</div>
+</a>
+</div>
+<div class="col-sm-3 col-xs-6">
+<a class="enlace-ponente" href="ponentes/javier-rodriguez.html" target="_self">
+<div class="speaker">
+<div class="photo-wrapper rounded"><img src="assets/img/speakers/javier-rodriguez.png" class="img-responsive"></div>
+<h3 class="name">Javier Rodríguez</h3>
+<p class="text-alt"><small>Head of Cyberintelligence & Global Risk en Tarlogic y Guardia Civil. </small></p>
+</div>
+</a>
+</div>
+</div>
+
+
+</div>
+</section>
+<section id="cfp" class="section bg-cover overlay bg4 light-text align-left">
+<div class="container">
+<h2 class="text-center"><span class="highlight">Call</span> For Paper</h2>
+<div class="text-center">(Abierto hasta el 30 Junio de 2020)</div>
+<br><br>
+¿Quieres participar dando una ponencia o taller relacionado con la Ciberinteligencia? Puedes hacerlo a través del siguiente enlace. Actualmente está abierto el CFP para ponentes con la siguiente estructura:</p><br>
+<ul class="lista">
+<li>Impartiendo alguna de las sesiones del itinerario (45 minutos)</li>
+<li>Impartiendo sesión práctica a modo taller (90 minutos con descanso)</li>
+<li>Presentando CFP libre (30 y 45 minutos)**</li>
+<li>Presentando solución, producto o servicio relacionado con la temática del congreso, con sponsorización de los patrocinadores (30 y 45 minutos)</li>
+</ul>
+<br><br>
+<p><i>** Opción de presentar anónimamente bajo un pseudónimo una charla, debido a temática de caracter especial / confidencial.</i></p>
+<br><br><br><br>
+<div class="col-sm-12 align-center">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdh0oEYpI_To6TEHgLIMBNDuuRsQbil0vWdZv8Z_sz-RYD4ZQ/viewform" target="_blank" class="btn btn-md btn-outline">Presentar CFP</a>
+</div>
+</div>
+</section>
+
+
+
+<br><br><br><br>
+<section id="sponsors" class="section align-center" style="margin-top: -120px">
+<div class="container">
+<div class="main-wrapper-badge">
+<div class="badge-hex yellow">
+<div class="circle"> <i class="icon section-icon icon-documents-bookmarks-12"></i></div>
+</div>
+</div>
+<h3>Patrocinadores</h3>
+<p class="text-alt">Agradecer el apoyo <span class="highlight">institucional</span> y el <span class="highlight">patrocinio</span> de empresas en este evento...</p>
+<br />
+<div class="sponsors">
+
+<div class="sponsor big"><a href="https://www.ccn-cert.cni.es/" target="new"><img src="assets/img/sponsors/ccn-cert.png" alt="CCN-CERT"></a></div>
+<div class="sponsor big"><a href="https://www.c1b3rwall.es/" target="new"><img src="assets/img/sponsors/c1b3rwall.jpg" alt="C1b3rwall"></a></div>
+<div class="sponsor big"><a href="https://humantrends.es/" target="new"><img src="assets/img/sponsors/human-trends.png" alt="Human Trends"></a></div>
+<div class="sponsor big"><a href="https://tecnoideas20.com/" target="new"><img src="assets/img/sponsors/tecnoideas.jpg" alt="Tecnoideas 2.0"></a></div>
+</div>
+<br /><br /><br />
+<div class="sponsors">
+<p class="text-alt" style="font-size: 15px">Con el apoyo, colaboración y difusión de ...</p>
+<br />
+<div class="sponsor big"><a href="https://www.flu-project.com/" target="new"><img src="assets/img/sponsors/flue-project.png" alt="Flue Project"></a></div>
+<div class="sponsor big"><a href="https://www.hackplayers.com/" target="new"><img src="assets/img/sponsors/hackplayers.png" alt="Hackplayers"></a></div>
+<div class="sponsor big"><a href="https://www.h-c0n.com/" target="new"><img src="assets/img/sponsors/h-c0n.png" width="110" alt="Hack Madrid"></a></div>
+<div class="sponsor big"><a href="https://hackmadrid.org/" target="new"><img src="assets/img/sponsors/hackmadrid.png" width="110" alt="Hack Madrid"></a></div>
+<div class="sponsor big"><a href="https://inteligenciayliderazgo.com/" target="new"><img src="assets/img/sponsors/i+l.png" alt="Inteligencia mas Liderazgo"></a></div>
+<div class="sponsor big"><a href="https://www.isecauditors.com/" target="new"><img src="assets/img/sponsors/isecauditors.jpg" width="120" alt="iSecAuditors"></a></div>
+<div class="sponsor big"><a href="https://eniit.es/" target="new"><img src="assets/img/sponsors/eniit.png" width="180" alt="Eniit"></a></div>
+<div class="sponsor big"><a href="https://www.campusciberseguridad.com/" target="new"><img src="assets/img/sponsors/campus-ciberseguridad.png" width="130" alt="Eniit"></a></div>
+<div class="sponsor big"><a href="https://www.osintcity.com/" target="new"><img src="assets/img/sponsors/osintcity.jpg" width="120" alt="OSINTCity"></a></div>
+<div class="sponsor big"><a href="https://ciberpatrulla.com/" target="new"><img src="assets/img/sponsors/ciberpatrulla.png" alt="CiberPatrulla"></a></div>
+</div>
+</div>
+</section>
+
+<section class="footer">
+<div class="container">
+<div class="col-md-3">
+<div class="widget about-widget"><img src="assets/img/logo-ginseg.png" style="max-width: 220px" alt="Ginseg - Comunidad de Ciberinteligencia"></div>
+</div>
+<div class="col-md-9">
+<div class="widget about-widget">
+<h6 class="widget-head">Sobre <span class="highlight">IntelCon</span></h6>
+<p class="text-alt"><small>IntelCon es un evento organizado desde la comunidad Ginseg, como primer congreso online de Ciberinteligencia con carácter gratuito y 100% online en streaming.</small></p>
+</div>
+</div>
+</div>
+<div class="footer-base">
+<div class="container">
+<div class="col-md-6">
+<ul class="footer-nav">
+<li class="footer-nav-item"><a href="#ponentes">Ponentes</a></li>
+
+<li class="footer-nav-item"><a href="#sponsors">Patrocinadores</a></li>
+<li class="footer-nav-item"><a href="aviso-legal.html">Aviso legal & Cookies</a></li>
+
+</ul>
+</div>
+<div class="col-md-6 align-right">
+<ul class="socials-nav align-right">
+<li class="socials-nav-item"><a target="new" href="https://www.linkedin.com/company/ginseg/"><span class="fa fa-linkedin"></span></a></li>
+<li class="socials-nav-item"><a target="new" href="https://twitter.com/gIntelSeg/"><span class="fa fa-twitter"></span></a></li>
+<li class="socials-nav-item"><a target="new" href="https://t.me/ginseg"><span class="fa fa-paper-plane"></span></a></li>
+</ul>
+<p class="text-alt"><small>Todos los derechos reservados &nbsp;&nbsp; © &nbsp;&nbsp;IntelCon 2020</small></p>
+</div>
+</div>
+</div>
+</section>
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+		<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/jquery-2.1.4.min68b3.js?ver=1"></script>
+<!--<![endif]-->
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/jquery.appear.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/jquery.plugin.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/jquery.countTo.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/modal-box.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/ginseg.js"></script>
+<script type="3c7a6bfcfec56236de939657-text/javascript" src="assets/js/dotty-2.js"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3c7a6bfcfec56236de939657-|49" defer=""></script></body>
 </html>
+
